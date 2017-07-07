@@ -1,6 +1,6 @@
 [package]
 name = "sleuth"
 version = "0.1.0"
-authors = ["nathantspencer <ntspencer@mix.wvu.edu>"]
+authors = ["nathantspencer <ntspencer@gmail.com>"]
 
 [dependencies]
