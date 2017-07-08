@@ -1,0 +1,5 @@
+.DS_Store
+sleuth/Cargo.lock
+sleuth/target/
+sleuth/target/*
+*.jpg
