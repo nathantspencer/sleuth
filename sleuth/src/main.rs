@@ -3,6 +3,7 @@ use std::fs::File;
 use std::process;
 use std::io::prelude::*;
 
+use exif::exif_from_bytes;
 use exif::Exif;
 mod exif;
 
@@ -22,8 +23,7 @@ fn main() {
         bytes.push(byte.unwrap());
     }
 
-    let mut test: Exif = Default::default();
-    test.extract_exif_from_bytes(bytes);
+    let metadata: Exif = exif_from_bytes(bytes).unwrap();
 
-    println!("Size of APP1 Segment: {}", test.get_size_in_bytes());
+    println!("Size of APP1 Segment: {}", metadata.get_size_in_bytes());
 }
