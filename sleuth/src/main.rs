@@ -6,6 +6,7 @@ use std::io::prelude::*;
 use exif::exif_from_bytes;
 use exif::Exif;
 mod exif;
+mod tests;
 
 fn main() {
     let args: Vec<_> = env::args().collect();
